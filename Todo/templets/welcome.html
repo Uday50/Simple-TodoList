@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #DED0B6;
+        }
+        .about {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 5%;
+            text-align: justify;
+        }
+        hr{
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Welcome Message -->
+    <div class="jumbotron jumbotron-fluid" style="background-color: #FAEED1">
+        <div class="container" >
+            <h1 class="display-3"><strong>Welcome to ToDo's!</strong></h1>
+            <p class=" h5 display-4">organize your tasks and stay productive.</p>
+            <hr class="my-4">
+            <!-- Add any additional information you want to display -->
+        </div>
+            
+    </div>
+
+    <!-- User Details Form Container -->
+    <div class="container" style="width: 40%;">
+        <div class="card mt-4">
+            <div class="card-header" style="background-color: #BBAB8C;">
+                <strong>User Details</strong> 
+            </div>
+            <div class="card-body" style="background-color: #FDF7E4;">
+                <form method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="name" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- About Website Container -->
+    <div class="about text-center">
+        <div class="w-100 p-3">
+            <h2><strong>About Us</strong></h2>
+            <h4>Welcome to our todo website!</h4> 
+            <p>Our platform offers a simple and efficient way to organize your tasks and stay productive. 
+                With intuitive features, you can easily add, update, and delete tasks, ensuring seamless task management.</p>
+                
+                <p>Whether you're a student, professional, or busy parent,our user-friendly interface helps you prioritize and accomplish your goals effectively. 
+                Experience hassle-free task tracking with our todo website, designed to streamline your daily routines and enhance productivity. 
+                Start managing your tasks effortlessly today!</p>
+        </div>
+        <!-- <div class="col-5">
+            <img src="../static/sideimg.jpg" alt="Todolist Image" height= 300px>
+        </div> -->
+    </div>
+    <!-- <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                About ToDo's
+            </div>
+            <div class="card-body">
+                <p class="text-center ">    
+                    Welcome to our todo website!<br> 
+                    Our platform offers a simple and efficient way to organize your tasks and stay productive. 
+                    With intuitive features, you can easily add, update, and delete tasks, ensuring seamless task management. 
+                    Whether you're a student, professional, or busy parent,our user-friendly interface helps you prioritize and accomplish your goals effectively. 
+                    Experience hassle-free task tracking with our todo website, designed to streamline your daily routines and enhance productivity. 
+                    Start managing your tasks effortlessly today!
+
+                </p>
+                Add more information about your website
+            </div>
+        </div>
+    </div>-->
+
+    <div class="text-center">{% include 'footer.html' %}</div>
+
+</body>
+
+</html>

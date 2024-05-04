@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Webpage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .form-check-input:checked + .form-check-label {
+            text-decoration: line-through;
+        }
+        body{
+            background-color: #DED0B6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid" style="background-color: #FAEED1">
+        <div class="container" >
+            <h1 class="display-3"><strong>Hello {{ todo['name'] }}!!</strong></h1>
+            <p class=" h5 display-4">Create your ToDo.</p>
+            <hr class="my-4">
+            <!-- Add any additional information you want to display -->
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Left Part: Task Form -->
+                <div class="card">
+                    <div class="card-body" style="background-color: #FDF7E4;">
+                        <h5 class="card-header" style="background-color: #BBAB8C;">Add Task</h5>
+                        <form action="/add" method="post">
+                            <div class="form-group" style="margin-top: 8px;">
+                                <label for="taskTitle"><strong>Task Title</strong></label>
+                                <input type="text" name="task" class="form-control" id="taskTitle" placeholder="Enter task title">
+                            </div>
+                            <div class="form-group">
+                                <label for="taskDescription"><strong>Task Description</strong></label>
+                                <textarea class="form-control" name="description" id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Right Part: Task List -->
+                <div class="card">
+                    <div class="card-body" style="background-color: #FDF7E4;">
+                        <h5 class="card-header" style="background-color: #BBAB8C;">Task List</h5>
+                        {% for i in todo['todo'] %}
+                        <div style="margin-bottom: 20px; border: 1px solid #ddd; padding: 10px;
+                        border-radius: 8px; background-color: #DED0B6;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="taskCheckbox">
+                                <label class="form-check-label" for="taskCheckbox">
+                                    <strong>{{i[1]}}</strong>
+                                    <p>{{i[2]}}</p>
+                                </label>
+                            </div>
+                            <a href="/delete/{{i[0]}}" type="button" class="btn btn-danger btn-sm ml-2">Delete</a>
+                            <a href="/update/{{i[0]}}" type="button" class="btn btn-primary btn-sm">Update</a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">{% include 'footer.html' %}</div>
+
+</body>
+
+</html>

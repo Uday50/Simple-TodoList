@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Task - Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #DED0B6;
+            margin-top: 8%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="width: 45%;">
+        <div class="card mt-4">
+            <div class="card-header" style="background-color: #BBAB8C;">
+                <h2 class="display-4 text-center"><strong>Update Task</strong></h2>
+            </div>
+            <div class="card-body" style="background-color: #FDF7E4;">   
+                <form action="/update/{{task[0]}}" method="POST">
+                    <div class="form-group">
+                        <label for="updatedTitle"><strong>Task Title</strong></label>
+                        <input type="text" class="form-control" name="task" id="updatedTitle" value="{{ task[1] }}" placeholder="Enter updated task title" required> 
+                    </div>
+                    <div class="form-group">
+                        <label for="updatedDescription"><strong>Task Description</strong></label>
+                        <textarea class="form-control" name="description" id="updatedDescription" rows="3" placeholder="Enter updated task description" required></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Submit Changes</button>
+                    </div>
+                </form>
+                <diV class="col-md-12 text-center">                  
+                    <a href="/index" class="btn btn-secondary mt-3">Return to Home</a>
+                </diV>
+
+            </div> 
+        </div>
+    </div>
+    <div class="text-center">{% include 'footer.html' %}</div>
+    
+</body>
+
+</html>
