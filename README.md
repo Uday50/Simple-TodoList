@@ -8,7 +8,7 @@ The Todo List app provides a straightforward interface for task management, maki
 
 ## Screenshots 🖼️
 ![Screenshot 1](Images/Screenshot 2024-05-04 142848.png)
-![Screenshot 2](path/to/screenshot2.png)
+![Screenshot 2](Images/Screenshot 2024-05-04 143021.png)
 
 Add screenshots of your application here. You might include the home page, task addition, and task update views.
 
