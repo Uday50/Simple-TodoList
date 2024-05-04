@@ -27,8 +27,7 @@ The Todo List app provides a straightforward interface for task management, maki
   - **SQLite**: Manages data persistence and storage for tasks.
 
 ## External Links 🔗
-- [Live Demo](URL-to-live-demo)
-- [Repository](URL-to-repository)
+- [Repository]([URL-to-repository](https://github.com/Uday50/Simple-TodoList))
 
 Feel free to visit the live demo or view the source code in this repository. Contributions, issues, and feature requests are welcome!
 
