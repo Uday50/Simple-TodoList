@@ -7,7 +7,7 @@ This project is a simple web-based Todo List application. It allows users to man
 The Todo List app provides a straightforward interface for task management, making it ideal for personal use or as a demonstration of using various web technologies in a real-world application.
 
 ## Screenshots 🖼️
-![Screenshot 1](path/to/screenshot1.png)
+![Screenshot 1](Images/Screenshot 2024-05-04 142848.png)
 ![Screenshot 2](path/to/screenshot2.png)
 
 Add screenshots of your application here. You might include the home page, task addition, and task update views.
