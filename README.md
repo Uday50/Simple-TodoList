@@ -8,7 +8,9 @@ The Todo List app provides a straightforward interface for task management, maki
 
 ## Screenshots 🖼️
 ![Welcome Page](Images/Welcome.png)
+<img src="Images/Welcome.png" alt="Welcome Page" width="300px" height="200px">
 ![Home Page](Images/TodoList.png)
+<img src="Images/TodoList.png" alt="Home Page" width="300px" height="200px">
 
 Add screenshots of your application here. You might include the home page, task addition, and task update views.
 
